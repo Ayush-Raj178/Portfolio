@@ -9,7 +9,7 @@ const Hero = () => {
     }
   };
 
-  // Staggered animation variants
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

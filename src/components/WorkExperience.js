@@ -18,7 +18,7 @@ const WorkExperience = () => {
       ],
       skills: ["Java", "OOP", "Eclipse", "Git", "Debugging", "Team Collaboration"]
     },
-    // Add more experiences here as needed
+
   ];
 
   const containerVariants = {

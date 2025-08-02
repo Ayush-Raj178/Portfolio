@@ -17,7 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (no backend required)
+
     console.log('Form submitted:', formData);
     alert('Thank you for your message! I\'ll get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
@@ -113,13 +113,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Location</h4>
-                  <p className="text-gray-600 text-sm">New York, USA</p>
+                  <p className="text-gray-600 text-sm">Chennai, Tamil Nadu</p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+          
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

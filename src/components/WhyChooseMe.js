@@ -96,9 +96,7 @@ const WhyChooseMe = () => {
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-800 mb-4">
             Why Choose Me?
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Discover the key strengths that make me a valuable addition to your development team
-          </p>
+          {/* Removed subtitle text as requested */}
         </motion.div>
 
         {/* Strengths Grid */}
@@ -122,9 +120,7 @@ const WhyChooseMe = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600 mb-6">
-            Ready to bring these skills to your next project?
-          </p>
+          {/* Removed 'Ready to bring these skills to your next project?' text as requested */}
           <button 
             onClick={() => {
               const element = document.getElementById('contact');

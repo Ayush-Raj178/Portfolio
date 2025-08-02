@@ -148,33 +148,8 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <motion.p 
-            className="text-xl text-gray-600 mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Ready to bring these skills to your next project?
-          </motion.p>
-          <motion.button 
-            onClick={() => {
-              const element = document.getElementById('projects');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-10 py-4 rounded-2xl font-semibold hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            View My Projects
-            <span className="ml-2">→</span>
-          </motion.button>
+          {/* Removed 'Ready to bring these skills to your next project?' text as requested */}
+          {/* Removed 'View My Projects' button as requested */}
         </motion.div>
       </div>
     </section>
