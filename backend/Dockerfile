@@ -2,8 +2,13 @@
 FROM maven:3.8.6-eclipse-temurin-17-alpine AS build
 WORKDIR /app
 
-# Copy only the files needed for Maven to work
+# Copy only the POM file first to leverage Docker cache
 COPY pom.xml .
+
+# Download all dependencies
+RUN mvn dependency:go-offline
+
+# Copy source code
 COPY src ./src
 
 # Build the application
@@ -20,11 +25,11 @@ COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
 
 # Set JVM options
-ENV JAVA_OPTS="-Xmx512m -Xms256m"
+ENV JAVA_OPTS="-Xmx512m -Xms256m -Dspring.profiles.active=prod"
 
 # Health check (used by Render)
 HEALTHCHECK --interval=30s --timeout=3s \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:8080/actuator/health || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:8080/api/actuator/health || exit 1
 
 # Run the application
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
