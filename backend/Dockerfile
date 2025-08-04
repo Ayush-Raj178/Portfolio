@@ -19,8 +19,7 @@ COPY --from=build /app/target/*.jar app.jar
 # Expose the port your app runs on
 EXPOSE 8080
 
-# Set environment variables
-ENV SPRING_PROFILES_ACTIVE=prod
+# Set JVM options
 ENV JAVA_OPTS="-Xmx512m -Xms256m"
 
 # Health check (used by Render)
