@@ -1,0 +1,30 @@
+# Maven
+target/
+!target/*.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Build output
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
