@@ -13,5 +13,6 @@ C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\repository\
 C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\model\ResumeDownload.java
 C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\model\ContactMessage.java
 C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\dto\ContactMessageDTO.java
+C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\controller\ApiInfoController.java
 C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\mapper\ContactMessageMapper.java
 C:\Users\ayush\portfolio-website\backend\src\main\java\com\portfolio\dto\ApiResponse.java

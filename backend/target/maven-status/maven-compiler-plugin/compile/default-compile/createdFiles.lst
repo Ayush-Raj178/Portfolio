@@ -14,5 +14,6 @@ com\portfolio\service\impl\ContactMessageServiceImpl.class
 com\portfolio\service\ContactMessageService.class
 com\portfolio\controller\ContactController.class
 com\portfolio\repository\ContactMessageRepository.class
+com\portfolio\controller\ApiInfoController.class
 com\portfolio\exception\ResourceNotFoundException.class
 com\portfolio\dto\ContactMessageDTO.class
