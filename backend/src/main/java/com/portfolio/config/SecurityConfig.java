@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -20,9 +19,15 @@ public class SecurityConfig {
                 .requestMatchers(
                     "/api/contact",
                     "/api/resume/download",
-                    "/api/actuator/**"
+                    "/api/resume/download-count",
+                    "/api",
+                    "/api/actuator/**",
+                    "/actuator/**",
+                    "/static/**",
+                    "/",
+                    "/error"
                 ).permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
             );
             
         return http.build();
