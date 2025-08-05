@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({
-    "com.portfolio.controllers",
-    "com.portfolio.services",
+    "com.portfolio.controller",
+    "com.portfolio.service",
     "com.portfolio.config",
-    "com.portfolio.repositories"
+    "com.portfolio.repository"
 })
 public class PortfolioApplication {
     public static void main(String[] args) {
