@@ -1,0 +1,33 @@
+# Dependencies and local package caches
+**/node_modules/
+.m2-repository/
+
+# Generated build and test output
+**/target/
+**/build/
+**/dist/
+**/coverage/
+**/playwright-report/
+**/test-results/
+
+# Local environment files (may contain credentials)
+**/.env
+**/.env.*
+!**/.env.example
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
+
+# Logs and temporary QA output
+*.log
+*.tmp
+*.bak
+qa-artifacts/
+portfolio-phase*-screenshot*.png
+portfolio-phase*-qa*.json

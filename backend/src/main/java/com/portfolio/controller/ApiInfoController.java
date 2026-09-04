@@ -19,7 +19,7 @@ public class ApiInfoController {
         apiInfo.put("endpoints", "");
         apiInfo.put("POST /api/contact", "Submit contact form");
         apiInfo.put("GET /api/resume/download", "Download resume");
-        apiInfo.put("GET /api/actuator/health", "Health check endpoint");
+        apiInfo.put("GET /api", "Service health and API information");
         return apiInfo;
     }
 }

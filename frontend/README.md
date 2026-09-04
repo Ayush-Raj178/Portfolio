@@ -6,7 +6,7 @@
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Ayush Raj** — a passionate Full-Stack Developer specializing in building fast, scalable web applications using **React.js & Spring Boot**. I'm currently seeking internships or entry-level roles where I can apply and grow my skills.
+Hi, I'm **Ayush Raj** — a **Software Engineer** focused on Java, Spring Boot, backend systems, and full-stack development with React.
 
 ## ✨ Features
 

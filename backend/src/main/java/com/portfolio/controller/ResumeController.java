@@ -16,7 +16,13 @@ import java.util.Map;
 
 @Slf4j
 @RestController
-@CrossOrigin(origins = {"https://portfolio-orcin-zeta-43.vercel.app", "http://localhost:3000"})
+@CrossOrigin(origins = {
+        "https://portfolio-orcin-zeta-43.vercel.app",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:4173",
+        "http://127.0.0.1:4173"
+})
 @RequestMapping("/api/resume")
 @RequiredArgsConstructor
 public class ResumeController {
@@ -28,7 +34,7 @@ public class ResumeController {
 
     @GetMapping(
         value = "/download",
-        produces = MediaType.APPLICATION_OCTET_STREAM_VALUE
+        produces = MediaType.APPLICATION_PDF_VALUE
     )
     public ResponseEntity<byte[]> downloadResume() throws IOException {
         log.info("Attempting to download resume from: {}", RESOURCE_PATH);

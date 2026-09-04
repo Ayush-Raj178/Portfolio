@@ -21,8 +21,6 @@ public class SecurityConfig {
                     "/api/resume/download",
                     "/api/resume/download-count",
                     "/api",
-                    "/api/actuator/**",
-                    "/actuator/**",
                     "/static/**",
                     "/",
                     "/error"

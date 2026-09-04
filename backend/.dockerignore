@@ -1,6 +1,5 @@
 # Maven
 target/
-!target/*.jar
 
 # IDE
 .idea/

@@ -20,7 +20,10 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                     "https://portfolio-orcin-zeta-43.vercel.app",
-                    "http://localhost:3000"
+                    "http://localhost:3000",
+                    "http://127.0.0.1:3000",
+                    "http://localhost:4173",
+                    "http://127.0.0.1:4173"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD")
                 .allowedHeaders("*")
@@ -34,7 +37,10 @@ public class WebConfig implements WebMvcConfigurer {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
             "https://portfolio-orcin-zeta-43.vercel.app",
-            "http://localhost:3000"
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "http://localhost:4173",
+            "http://127.0.0.1:4173"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
