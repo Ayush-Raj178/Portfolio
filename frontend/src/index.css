@@ -1240,6 +1240,12 @@ button {
 
 .status-success { color: var(--success); }
 .status-error { color: var(--danger); }
+.form-status a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 .resume-feedback {
   position: fixed;
