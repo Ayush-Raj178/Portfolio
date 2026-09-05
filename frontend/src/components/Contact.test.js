@@ -33,7 +33,7 @@ describe('Contact', () => {
         message: 'A test message',
         subject: 'New message from Ayush Raj portfolio',
       },
-      { timeout: 30000 },
+      { timeout: 45000 },
     );
 
     expect(await screen.findByText('Message sent. Thanks for reaching out.')).toBeInTheDocument();

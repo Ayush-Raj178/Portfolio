@@ -5,7 +5,7 @@ import { FiArrowRight, FiExternalLink, FiMail } from 'react-icons/fi';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
 const CONTACT_EMAIL = 'ayushraj12121212@gmail.com';
-const CONTACT_REQUEST_TIMEOUT_MS = 30000;
+const CONTACT_REQUEST_TIMEOUT_MS = 45000;
 
 const contactLinks = [
   { label: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, icon: <FiMail /> },
